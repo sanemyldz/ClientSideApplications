@@ -1,2 +1,2 @@
 # ClientSideApplications
-Weekly Client Side Applications Projects
+Weekly Client Side Applications
