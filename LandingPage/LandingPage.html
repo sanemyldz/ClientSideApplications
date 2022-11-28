@@ -16,18 +16,13 @@
          display: flex;
          height: 630px;
         }
-        .content
+
+        @media (max-width: 995px) 
         {
-           justify-content: center;
-           text-align: center;
-           margin: auto;
-        }
-        .content *
-        {
-            color:white;
-        }
-        #button{
-            border-radius: 50px;
+            .image
+            {
+                display: none;
+            }
         }
 
     </style>
@@ -37,11 +32,11 @@
 
         <header class="header" >
 
-            <div class="content ">
+            <div class="content text-white justify-content-center m-auto text-center">
                 <p class="fs-1 fw-bold">Create a Free Website</p>
                 <p class="fs-4" >Everything you need right in the browser.</p>
                 <p class="fs-6" >Build your own website. It is easy to use - try it!</p>
-                <button id="button" type="button" class="btn btn-success px-5" >Get started for free</button> 
+                <button id="button" type="button" class="btn btn-success rounded-pill px-5" >Get started for free</button> 
             </div>
 
         </header>
@@ -77,38 +72,15 @@
 
             </div>
 
-            <div class="mainsection-2 bg-dark text-white row text-center px-5 py-4 ">
+            <div class="mainsection-2 bg-dark text-white row text-center  ">
                 <p class=" text-center fw-bold fs-3 p-5">How it works</p>
 
-                <div class=" col-lg-3 col-md-6 col-sm-6 mb-3 ">
-                    <div class="justify-content-center">                    
-                        <img src="img/img1.svg" >
-                        <img src="img/img2.svg" >
-                    </div>
-
-                    <p class="fw-light mt-4 ">1.create your own website and share it with others.</p>
+                <div class="row">
+                    <p class=" col-lg-3 col-md-6 col-sm-15 fw-light mb-5 "><span class=" d-flex justify-content-center mb-4"><img src="img/img1.svg" ><img class="image" src="img/img2.svg" ></span>1.create your own website and share it with others.</p>
+                    <p class="col-lg-3 col-md-6 col-sm-15 fw-light mb-5"><span class="d-flex justify-content-center  mb-4"><img src="img/img3.svg" ><img class="image" src="img/img4.svg" ></span>2.Code directly in your browser</p>
+                    <p class=" col-lg-3 col-md-6 col-sm-15  fw-light mb-5"><span class="d-flex justify-content-center  mb-4"><img src="img/img5.svg" ><img class="image" src="img/img2.svg" ></span>3.Start with ready-to-use designs and structures</p>
+                    <p class="col-lg-3 col-md-6 col-sm-15 fw-light  mb-5"><span class="d-flex justify-content-center mb-4"><img src="img/img6.svg" ></span>4.Upload and handle files in your browser</p>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-3">
-                    <div class="justify-content-center">
-                        <img src="img/img3.svg" >
-                        <img src="img/img4.svg" >
-                    </div>
-                    <p class="fw-light mt-4 ">2.Code directly in your browser</p>
-                </div>
-                <div class=" col-lg-3 col-md-6 col-sm-6 mb-3">
-                    <div class="justify-content-center">
-                        <img src="img/img5.svg" >
-                        <img src="img/img2.svg" >
-                    </div>
-                    <p class="fw-light mt-4 ">3.Start with ready-to-use designs and structures</p>
-                </div>
-                <div class=" col-lg-3 col-md-6 col-sm-6 mb-3">
-                    <div class="justify-content-center">
-                        <img src="img/img6.svg" >
-                    </div>
-                    <p class="fw-light mt-4 ">4.Upload and handle files in your browser</p>
-                </div>
-               
             </div>
 
             <div class="mainsection-3 row my-5 mx-4 ">
